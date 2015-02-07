@@ -7,6 +7,7 @@
 > - [Download Unity](http://unity3d.com/unity/download)
 > - [Unity Scripting API](http://docs.unity3d.com/ScriptReference/index.html)
 > - [Unity Video Tutorials](http://unity3d.com/learn/tutorials/modules/beginner/editor)
+> - [Unity Community Support](http://unity3d.com/community)
 
 ## Foundation Phase
 
@@ -75,8 +76,37 @@ In this phase students will build the two dimensional game Pong as well as sligh
     - Add ScoreManager script to GameManager
     - Set left and right wall triggers and create script that attaches to ScoreManager named 'SideWalls'
     - Add the Score skin which is basically a label
+    - Set the font on the score by adding a custom asset
 
-        
+7. We now have a functional game, but we can only play through one point.  In this checkpoint you will learn how to reset the ball's position when a point is scored.
+    - More scripting in the walls management script to send a signal to the ball script to tell it to reset.
+    - More scripting in the ball script to reset it's position when a point is scored
+
+8. Our game is cool but we don't have sound, how do we add sound to our game?
+    - Add audtio source to ball strike
+    - Adding pitch variation to the ball strike
+    - Assignment: now you add a sound when the player scores
+    - Lastly, let's add background music to the game
+        - Breakpoint: Audio optimization
+            - Since the background track is larger in size and longer we will want to make sure that the settings are correct such as:
+                - 'Use compression'
+                - 'Stream from disc'
+
+9. Miscellaneous Stuff, tweaking our game
+    - Physics2D settings
+    - Positions iterations
+    - Adding a restart button to the game
+        - Modifying the score manager script
+        - Adding a tag to the ball object so we can reference it later
+        - Assignment: change the font on the button
+
+10. Build Settings and Exporting our Game
+    - Add the scenes to the Build Settings Scenes pane
+    - Modify the Build Settings to build for Android
+    - Add an icon for your game
+    - Setting the Bundle Identifier    
+    - And finally getting the APK onto your phone (or emulator) to test it out
+
 ## Intermediate Phase
 
 ## Advanced Phase
