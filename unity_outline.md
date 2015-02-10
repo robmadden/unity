@@ -9,12 +9,18 @@
 > - [Unity Video Tutorials](http://unity3d.com/learn/tutorials/modules/beginner/editor)
 > - [Unity Community Support](http://unity3d.com/community)
 
-## Foundation Phase
+## Foundation Phase (120 hours)
 
 In this phase students will build the two dimensional game Pong as well as slightly more challenging three dimensional game where they navigate a ball through a maze.  By the end of this foundation, the student should be equipped with knowledge pertaining to the Unity application, basic C# knowledge, and how Unity ties all pieces of a game together to make it a functional unit.  All assets will be provided for his phase.
 
 0. Setting up Our project, creating a githug profile and initializing a git repository
     - Explain revision control and why we need it
+    - Student creates github account if they haven't already and initializes a github repository for their game
+    - Student makes their first commit
+    - Brief overview of basic git commands:
+        - git fetch
+        - git pull
+        - get checkout
 
 1. Brief introduction to the Unity Interface
 
@@ -32,6 +38,9 @@ In this phase students will build the two dimensional game Pong as well as sligh
     - Explain the static 'Layers' and 'Layout' button at the top right of the software.
 
 2. Setting up the Environment
+    - Creating your first branch in git: In this checkpoint you will learn how to create a branch in git 
+        - What is branching?  Why do we need/use branches?
+        - Creating a branch for our first game
     - Creating Your First Game Board: Most games start with an environment or level, in Pong we have a simple board.  In this checkpoint we show how to create the game board for Pong which is effectively creating a GameObject, naming it, setting the proper sprite, then setting the layer properties.
 
 3. Camera Setup
@@ -107,6 +116,15 @@ In this phase students will build the two dimensional game Pong as well as sligh
     - Setting the Bundle Identifier    
     - And finally getting the APK onto your phone (or emulator) to test it out
 
-## Intermediate Phase
+## Intermediate Phase (120 hours)
+    - In this phase, the student will build a more sophisticated 2D game such as Angry Birds which [Unity suggests](http://unity3d.com/learn/tutorials/modules/beginner/live-training-archive/making-angry-birds-style-game) is an "intermediate" level of game to build, or a 3D intermediate game.
+    - Student will also learn more advanced git techniques such as merging, rebasing, etc. 
 
-## Advanced Phase
+## Advanced Phase (260 Hours)
+
+Build your own game from scratch (with assets from Unity) from a pool of games that we predetermine are sophisticated enough.
+    - Ideas for sophisticated games for students to build:
+        - Minesweeper
+        - Tetris
+        - 3D RPG with certain features such as, levels, inventory system, objectives, etc.
+        - Some type of zombie survival game with RPG like elements because everyone loves zombies
