@@ -9,9 +9,36 @@
 > - [Unity Video Tutorials](http://unity3d.com/learn/tutorials/modules/beginner/editor)
 > - [Unity Community Support](http://unity3d.com/community)
 
+
 ## Foundation Phase (120 hours)
 
 In this phase students will build the two dimensional game Pong as well as slightly more challenging three dimensional game where they navigate a ball through a maze.  By the end of this foundation, the student should be equipped with knowledge pertaining to the Unity application, basic C# knowledge, and how Unity ties all pieces of a game together to make it a functional unit.  All assets will be provided for his phase.
+
+# Introduction to C#: why we chose it and how it will aid with our game development
+    - Dissecting Hello World (code sample provided)
+        - Syntax Conventions
+        - Commenting    
+        - Introduction to variables, types and assignment and why we need them
+        - Explaining the idea of a library or import
+    - Introduction to conditionals (modifying hello world)
+    - Introduction to loops (modigyin hello world)
+    - Introduction to classes and methods (modifying hello world)
+        - What's a constructor?
+        - Explain what visibilty on a method is and how it can be used to your advantage as a programmer
+        - Explain method overloading
+    - Introduction to the most widely used data structures (modifying hello world)
+        - Queue
+        - Stack
+        - Hashtable
+    - Introduction to interfaces and what they're good for
+    - Introduction to abstract classes and what they're good for
+    - Go over some basic debugging by introducing an error and stepping through code
+
+After Hello World is built, describe the major principles of Object Orient Programming and the difference between functional and object orient programming.
+    - Abstraction
+    - Inheritence
+    - Encapsulation
+    - Polymorphism 
 
 0. Setting up Our project, creating a githug profile and initializing a git repository
     - Explain revision control and why we need it
@@ -120,6 +147,51 @@ In this phase students will build the two dimensional game Pong as well as sligh
     - In this phase, the student will build a more sophisticated 2D game such as Angry Birds which [Unity suggests](http://unity3d.com/learn/tutorials/modules/beginner/live-training-archive/making-angry-birds-style-game) is an "intermediate" level of game to build, or a 3D intermediate game.
     - Student will also learn more advanced git techniques such as merging, rebasing, etc. 
 
+1.  Setting up the Environment 
+    - Assignment: Setting the sprite
+    - Assignment: Adding grass
+    - Assignment: Adding a 2D edge collider to the grass
+    - Sorting layers
+
+2.  Setting up the Camera
+    - Setting the size
+
+3.  Adding the catapult (This is sort of analagous to the player module)
+    - Adding the components of the catapult and setting layers correctly
+    - Adding the asteroid to the catapult
+        - Applying the physics engine to the asteroid sprite
+            - Adding linear drag
+            - Adding angular drag
+        - Adding circular 2D collider
+            - Modifying the radius
+    - Adding the catapult slings
+    - Adding the spring joint 2D to the asteroid
+        - anchor to the catapult
+    - Adding the rubber bands
+        - Add the line renderers to the catapult
+        - Add the new material to define the band
+        - Set material on line renderers
+    - Adding the ProjectileDragging.cs script to Asteroid
+        - TODO: breakdown of different coding challenges here
+ 
+4.  Modifying the camera to follow the Asteroid
+    - Adding a script that controls the camera position, add the script to Main Camera
+    - Adding boundary markers (left and right)
+
+5.  Getting the game to restart
+    - Add Boundary object that is a trigger to restart the game
+    - Add reset script
+
+6.  Building the Structures to be knocked down
+    - Same patterns as always, add the colliders
+
+7.  Adding the Target
+    - Adding the script to control the amount of damage the asteroid does
+
+8.  Adding a Score System
+
+9.  Adding More Levels
+
 ## Advanced Phase (260 Hours)
 
 Build your own game from scratch (with assets from Unity) from a pool of games that we predetermine are sophisticated enough.
@@ -128,3 +200,4 @@ Build your own game from scratch (with assets from Unity) from a pool of games t
         - Tetris
         - 3D RPG with certain features such as, levels, inventory system, objectives, etc.
         - Some type of zombie survival game with RPG like elements because everyone loves zombies
+        - Some type of first person shooter
