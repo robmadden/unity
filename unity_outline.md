@@ -41,7 +41,7 @@ After Hello World is built, describe the major principles of Object Orient Progr
     - Encapsulation
     - Polymorphism 
 
-### Time to Build our First Game
+#### Time to Build our First Game, Pong
 
 0. Setting up Our project, creating a githug profile and initializing a git repository
     - Explain revision control and why we need it
@@ -142,10 +142,10 @@ After Hello World is built, describe the major principles of Object Orient Progr
     - And finally getting the APK onto your phone (or emulator) to test it out
 
 ## Intermediate Phase (120 hours)
-    - In this phase, the student will build a more sophisticated 2D game such as Angry Birds which [Unity suggests](http://unity3d.com/learn/tutorials/modules/beginner/live-training-archive/making-angry-birds-style-game) is an "intermediate" level of game to build, or a 3D intermediate game.
-    - Student will also learn more advanced git techniques such as merging, rebasing, etc. 
 
-### Game One: Our First Three Dimensional Game - Zombie Slayer - this series of checkpoints will focus heavily on the scripting aspect of Unity
+    ### In this phase, the student will build a more sophisticated 2D game such as Angry Birds which [Unity suggests](http://unity3d.com/learn/tutorials/modules/beginner/live-training-archive/making-angry-birds-style-game) is an "intermediate" level of game to build, or a 3D intermediate game.  The Student will also learn more advanced git techniques such as merging, rebasing, etc. 
+
+#### Zombie Slayer : Our First Three Dimensional Game, this series of checkpoints will focus heavily on the scripting aspect of Unity
 
 0.  Creating a 3D project
 
@@ -186,7 +186,7 @@ After Hello World is built, describe the major principles of Object Orient Progr
         - After the animation ends, fade the game out, fade the game over state in and end the game
         - Add a restart button that will restart the game
 
-### Game Two: Angry Birds - this series of checkpoints will introduce some new techniques we haven't seen as well as some scripting techniques
+#### Angry Birds, this series of checkpoints will introduce some new techniques we haven't seen as well as some scripting techniques
 
 1.  Setting up the Environment 
     - Assignment: Setting the sprite
