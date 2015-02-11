@@ -8,6 +8,11 @@
 > - [Unity Scripting API](http://docs.unity3d.com/ScriptReference/index.html)
 > - [Unity Video Tutorials](http://unity3d.com/learn/tutorials/modules/beginner/editor)
 > - [Unity Community Support](http://unity3d.com/community)
+>
+> **CSharp**
+>
+> - [CSharp Help](http://www.csharphelp.com/)
+> - [CSharp Programming Guide from Microsoft](https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx)
 
 
 ## Foundation Phase (120 hours)
@@ -33,7 +38,7 @@ In this phase students will build the two dimensional game Pong as well as sligh
     - Introduction to interfaces and what they're good for
     - Introduction to abstract classes and what they're good for
     - Introduction to exception handling 
-    - Go over some basic debugging by introducing an error and stepping through code
+    - Introduction to basic debugging by catching excepions and stepping through buggy code
 
 After Hello World is built, describe the major principles of Object Orient Programming and the difference between functional and object orient programming.
     - Abstraction
@@ -81,8 +86,6 @@ After Hello World is built, describe the major principles of Object Orient Progr
             - Explain what an IDE is and why we use them
         - Set up the "top wall" and "left wall" for the student.
         - Assignment: have the student create the bottom and right walls.
-
-        ![GameManager.cs](http://bit.ly/1I5QELF)
 
 4. Adding Players to your Game
     - Adding Player 1
@@ -141,9 +144,9 @@ After Hello World is built, describe the major principles of Object Orient Progr
     - Setting the Bundle Identifier    
     - And finally getting the APK onto your phone (or emulator) to test it out
 
-## Intermediate Phase (120 hours)
+## Intermediate Phase (180 hours)
 
-    ### In this phase, the student will build a more sophisticated 2D game such as Angry Birds which [Unity suggests](http://unity3d.com/learn/tutorials/modules/beginner/live-training-archive/making-angry-birds-style-game) is an "intermediate" level of game to build, or a 3D intermediate game.  The Student will also learn more advanced git techniques such as merging, rebasing, etc. 
+In this phase, the student will build a more sophisticated 2D game such as Angry Birds which [Unity suggests](http://unity3d.com/learn/tutorials/modules/beginner/live-training-archive/making-angry-birds-style-game) is an "intermediate" level of game to build, or a 3D intermediate game.  The Student will also learn more advanced git techniques such as merging, rebasing, etc. 
 
 #### Zombie Slayer : Our First Three Dimensional Game, this series of checkpoints will focus heavily on the scripting aspect of Unity
 
@@ -234,9 +237,9 @@ After Hello World is built, describe the major principles of Object Orient Progr
 9.  Adding More Levels
     - Assignment: Build a completely new level (Scene) which we haven't done yet, reuse existing components to create said scene
 
-## Advanced Phase (260 Hours)
+## Advanced Phase (200 Hours)
 
-Build your own game from scratch (with assets from Unity) from a pool of games that we predetermine are sophisticated enough.
+In this phase students will build their own game from scratch (with assets from Unity) from a pool of games that we predetermine are sophisticated enough.
     - Ideas for sophisticated games for students to build:
         - Minesweeper
         - Tetris
