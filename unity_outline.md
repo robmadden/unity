@@ -32,6 +32,7 @@ In this phase students will build the two dimensional game Pong as well as sligh
         - Hashtable
     - Introduction to interfaces and what they're good for
     - Introduction to abstract classes and what they're good for
+    - Introduction to exception handling 
     - Go over some basic debugging by introducing an error and stepping through code
 
 After Hello World is built, describe the major principles of Object Orient Programming and the difference between functional and object orient programming.
@@ -69,18 +70,13 @@ After Hello World is built, describe the major principles of Object Orient Progr
         - What is branching?  Why do we need/use branches?
         - Creating a branch for our first game
     - Creating Your First Game Board: Most games start with an environment or level, in Pong we have a simple board.  In this checkpoint we show how to create the game board for Pong which is effectively creating a GameObject, naming it, setting the proper sprite, then setting the layer properties.
+    - Describe what a 'PreFab' is
 
 3. Camera Setup
     - Setting Up The Camera: In this checkpoint we show how to set the camera for Pong and why the camera needs to be set in a certain fashion.
     - Setting Up the Boundaries for our Game Board: In this checkpoint we show how to add boundaries to the Pong game so that the players move within the boundary constraints.
         - Breakpoint: Introduction to 'MonoDevelop' which is ehe IDE that Unity has chosen to use.
             - Explain what an IDE is and why we use them
-        - Breakpoint: Introduction to C# programming language via overview of GameSetup.cs
-            - Class
-            - Variables
-            - Methods
-            - Commenting
-            - Imports
         - Set up the "top wall" and "left wall" for the student.
         - Assignment: have the student create the bottom and right walls.
 
@@ -147,11 +143,54 @@ After Hello World is built, describe the major principles of Object Orient Progr
     - In this phase, the student will build a more sophisticated 2D game such as Angry Birds which [Unity suggests](http://unity3d.com/learn/tutorials/modules/beginner/live-training-archive/making-angry-birds-style-game) is an "intermediate" level of game to build, or a 3D intermediate game.
     - Student will also learn more advanced git techniques such as merging, rebasing, etc. 
 
+# Game One: Our First Three Dimensional Game - Zombie Slayer - this series of checkpoints will focus heavily on the scripting aspect of Unity
+
+0.  Creating a 3D project
+
+1.  Setting up the Environment
+    - Set the lighting for the game
+
+2.  Setting the navigation in the 3D world
+    - Add the Mesh Collider component
+    - Creating the NavMesh
+    - Baking the NavMesh
+    - Assignment: Add background music to the game
+        - Tip: use a compressed audio file otherwise the game will be too big
+
+3.  Building our Zombie Slayer
+    - Importing the 3D asset into Unity
+    - Adding the animation controller, this is basically a state diagram within Unity that controls what states the player can be in:
+        - Idle, Move, Death
+    - Assignment: Build a script that will follow the zombie slayer
+    - Assignment: Add an audio source when the zombie slayer gets hurt
+    - Assignment: Add an audio source when the zombie slayer fires his weapon
+    - Animating our player's movement using scripting
+        - Introduction to raycasting
+    - Assignment: Build a script that will manage the Zombie Slayer's health
+
+4.  Adding enemies to our game
+    - Importing the 3D zombie asset
+    - Adding the spwan points for the zombies
+    - Assignment: create a script that will randomly spawn zombies in a series of set places and then attach it to the spawn points
+
+5.  Keeping Track of the Score
+    - Assignment: Build a script to keep track of how many zombies have been killed.
+    - Assignment: Display the zombie kill count in the game
+
+6.  Game Over
+    - Assignment: Build a smooth 'game over' state 
+        - Give them a partially filled out GameOverManager script
+        - When the players dies it should be animated
+        - After the animation ends, fade the game out, fade the game over state in and end the game
+        - Add a restart button that will restart the game
+
+# Game Two: Angry Birds - this series of checkpoints will introduce some new techniques we haven't seen as well as some scripting techniques
+
 1.  Setting up the Environment 
     - Assignment: Setting the sprite
     - Assignment: Adding grass
     - Assignment: Adding a 2D edge collider to the grass
-    - Sorting layers
+    - Introduction to sorting layers
 
 2.  Setting up the Camera
     - Setting the size
@@ -172,7 +211,6 @@ After Hello World is built, describe the major principles of Object Orient Progr
         - Add the new material to define the band
         - Set material on line renderers
     - Adding the ProjectileDragging.cs script to Asteroid
-        - TODO: breakdown of different coding challenges here
  
 4.  Modifying the camera to follow the Asteroid
     - Adding a script that controls the camera position, add the script to Main Camera
@@ -180,17 +218,19 @@ After Hello World is built, describe the major principles of Object Orient Progr
 
 5.  Getting the game to restart
     - Add Boundary object that is a trigger to restart the game
-    - Add reset script
+    - Assignment: Add a reset script
 
 6.  Building the Structures to be knocked down
     - Same patterns as always, add the colliders
 
 7.  Adding the Target
-    - Adding the script to control the amount of damage the asteroid does
+    - Assignment: Add a script to control the amount of damage the asteroid does
 
 8.  Adding a Score System
+    - Assignment: Build a script that will manage how many points the player has scored
 
 9.  Adding More Levels
+    - Assignment: Build a completely new level (Scene) which we haven't done yet, reuse existing components to create said scene
 
 ## Advanced Phase (260 Hours)
 
@@ -199,5 +239,4 @@ Build your own game from scratch (with assets from Unity) from a pool of games t
         - Minesweeper
         - Tetris
         - 3D RPG with certain features such as, levels, inventory system, objectives, etc.
-        - Some type of zombie survival game with RPG like elements because everyone loves zombies
-        - Some type of first person shooter
+        - A first person shooter like Duke Nukem 3D
