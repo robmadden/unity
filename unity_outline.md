@@ -20,31 +20,30 @@
 In this phase students will build the two dimensional game Pong as well as slightly more challenging three dimensional game where they navigate a ball through a maze.  By the end of this foundation, the student should be equipped with knowledge pertaining to the Unity application, basic C# knowledge, and how Unity ties all pieces of a game together to make it a functional unit.  All assets will be provided for his phase.
 
 ### Introduction to C#: why we chose it and how it will aid with our game development
-    - Dissecting Hello World (code sample provided)
+    1. Dissecting Hello World (code sample provided)
         - Syntax Conventions
         - Commenting    
         - Introduction to variables, types and assignment and why we need them
         - Explaining the idea of a library or import
-    - Introduction to conditionals (modifying hello world)
-    - Introduction to loops (modigyin hello world)
-    - Introduction to classes and methods (modifying hello world)
+    2. Introduction to conditionals (modifying hello world)
+    3. Introduction to loops (modigyin hello world)
+    4. Introduction to classes and methods (modifying hello world)
         - What's a constructor?
         - Explain what visibilty on a method is and how it can be used to your advantage as a programmer
         - Explain method overloading
-    - Introduction to the most widely used data structures (modifying hello world)
+    5. Introduction to the most widely used data structures (modifying hello world)
         - Queue
         - Stack
         - Hashtable
-    - Introduction to interfaces and what they're good for
-    - Introduction to abstract classes and what they're good for
-    - Introduction to exception handling 
-    - Introduction to basic debugging by catching excepions and stepping through buggy code
-
-After Hello World is built, describe the major principles of Object Orient Programming and the difference between functional and object orient programming.
-    - Abstraction
-    - Inheritence
-    - Encapsulation
-    - Polymorphism 
+    6. Introduction to interfaces and what they're good for
+    7. Introduction to abstract classes and what they're good for
+    8. Introduction to exception handling 
+    9. Introduction to basic debugging by catching excepions and stepping through buggy code
+    10. After Hello World is built, describe the major principles of Object Orient Programming and the difference between functional and object orient programming.  Give good coding samples that illustrate each example.
+        - Abstraction
+        - Inheritence
+        - Encapsulation
+        - Polymorphism 
 
 #### Time to Build our First Game, Pong
 
@@ -188,6 +187,8 @@ In this phase, the student will build a more sophisticated 2D game such as Angry
         - When the players dies it should be animated
         - After the animation ends, fade the game out, fade the game over state in and end the game
         - Add a restart button that will restart the game
+7.  Build and export the game
+    - Assignment: Build and export the game
 
 #### Angry Birds, this series of checkpoints will introduce some new techniques we haven't seen as well as some scripting techniques
 
@@ -208,6 +209,7 @@ In this phase, the student will build a more sophisticated 2D game such as Angry
             - Adding angular drag
         - Adding circular 2D collider
             - Modifying the radius
+        - Setting the linear and angular drag
     - Adding the catapult slings
     - Adding the spring joint 2D to the asteroid
         - anchor to the catapult
@@ -225,11 +227,16 @@ In this phase, the student will build a more sophisticated 2D game such as Angry
     - Add Boundary object that is a trigger to restart the game
     - Assignment: Add a reset script
 
-6.  Building the Structures to be knocked down
+6.  Building the Structure to be knocked down
+    - Add a parent game objects: house
+    - Add the planks to the house
     - Same patterns as always, add the colliders
+    - Assignment: Make a prefab of a plank
 
 7.  Adding the Target
     - Assignment: Add a script to control the amount of damage the asteroid does
+    - Add damagers to asteroid and planks
+    - Add particle system to target when it dies
 
 8.  Adding a Score System
     - Assignment: Build a script that will manage how many points the player has scored
@@ -243,5 +250,13 @@ In this phase students will build their own game from scratch (with assets from 
     - Ideas for sophisticated games for students to build:
         - Minesweeper
         - Tetris
-        - 3D RPG with certain features such as, levels, inventory system, objectives, etc.
-        - A first person shooter like Duke Nukem 3D
+        - A third person 3D RPG the game should have these minimum features:
+            - Assortment of different enemy types
+            - Levels
+            - Inventory system
+            - Health system
+            - Random world items
+            - Objectives
+            - NPCs
+        - A first person fantasy RPG with same featureset as above
+    - Have the student write at least one [custom plugin](http://docs.unity3d.com/Manual/Plugins.html)
