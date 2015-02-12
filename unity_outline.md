@@ -7,13 +7,59 @@
 > - [Download Unity](http://unity3d.com/unity/download)
 > - [Unity Scripting API](http://docs.unity3d.com/ScriptReference/index.html)
 > - [Unity Video Tutorials](http://unity3d.com/learn/tutorials/modules/beginner/editor)
+> - [Unity Community Support](http://unity3d.com/community)
+>
+> **CSharp**
+>
+> - [CSharp Help](http://www.csharphelp.com/)
+> - [CSharp Programming Guide from Microsoft](https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx)
 
-## Foundation Phase
+
+## Foundation Phase (120 hours)
 
 In this phase students will build the two dimensional game Pong as well as slightly more challenging three dimensional game where they navigate a ball through a maze.  By the end of this foundation, the student should be equipped with knowledge pertaining to the Unity application, basic C# knowledge, and how Unity ties all pieces of a game together to make it a functional unit.  All assets will be provided for his phase.
 
-0. Setting up Our project, creating a githug profile and initializing a git repository
-    - Explain revision control and why we need it
+### Introduction to C#: why we chose it and how it will aid with our game development
+    1. Dissecting Hello World (code sample provided)
+        - Syntax Conventions
+        - Commenting    
+        - Introduction to variables, types and assignment and why we need them
+        - Explaining the idea of a library or import
+    2. Introduction to conditionals (modifying hello world)
+    3. Introduction to loops (modigyin hello world)
+    4. Introduction to classes and methods (modifying hello world)
+        - What's a constructor?
+        - Explain what visibilty on a method is and how it can be used to your advantage as a programmer
+        - Explain method overloading
+    5. Introduction to the most widely used data structures (modifying hello world)
+        - Queue
+        - Stack
+        - Hashtable
+    6. Introduction to interfaces and what they're good for
+    7. Introduction to abstract classes and what they're good for
+    8. Introduction to exception handling 
+    9. Introduction to basic debugging by catching excepions and stepping through buggy code
+    10. After Hello World is built, describe the major principles of Object Orient Programming and the difference between functional and object orient programming.  Give good coding samples that illustrate each example.
+        - Abstraction
+        - Inheritence
+        - Encapsulation
+        - Polymorphism 
+
+### Brief Introduction to using git with MonoDevelop 
+    1. Setting up our project, creating a githug profile and initializing a git repository
+    2. Explain revision control and why we need it
+    3. Student creates github account if they haven't already and initializes a github repository for their game
+    4. Student makes their first commit
+    5. Brief overview of basic git commands:
+        - git fetch
+        - git pull
+        - git checkout
+        - git branch
+        - git merge
+    6. Setting the git project within MonoDevelop's Version Control
+
+#### Time to Build our First Game, Pong
+
 
 1. Brief introduction to the Unity Interface
 
@@ -31,23 +77,19 @@ In this phase students will build the two dimensional game Pong as well as sligh
     - Explain the static 'Layers' and 'Layout' button at the top right of the software.
 
 2. Setting up the Environment
+    - Creating your first branch in git: In this checkpoint you will learn how to create a branch in git 
+        - What is branching?  Why do we need/use branches?
+        - Creating a branch for our first game
     - Creating Your First Game Board: Most games start with an environment or level, in Pong we have a simple board.  In this checkpoint we show how to create the game board for Pong which is effectively creating a GameObject, naming it, setting the proper sprite, then setting the layer properties.
+    - Describe what a 'PreFab' is
 
 3. Camera Setup
     - Setting Up The Camera: In this checkpoint we show how to set the camera for Pong and why the camera needs to be set in a certain fashion.
     - Setting Up the Boundaries for our Game Board: In this checkpoint we show how to add boundaries to the Pong game so that the players move within the boundary constraints.
         - Breakpoint: Introduction to 'MonoDevelop' which is ehe IDE that Unity has chosen to use.
             - Explain what an IDE is and why we use them
-        - Breakpoint: Introduction to C# programming language via overview of GameSetup.cs
-            - Class
-            - Variables
-            - Methods
-            - Commenting
-            - Imports
         - Set up the "top wall" and "left wall" for the student.
         - Assignment: have the student create the bottom and right walls.
-
-        ![GameManager.cs](http://bit.ly/1I5QELF)
 
 4. Adding Players to your Game
     - Adding Player 1
@@ -75,8 +117,151 @@ In this phase students will build the two dimensional game Pong as well as sligh
     - Add ScoreManager script to GameManager
     - Set left and right wall triggers and create script that attaches to ScoreManager named 'SideWalls'
     - Add the Score skin which is basically a label
+    - Set the font on the score by adding a custom asset
 
-        
-## Intermediate Phase
+7. We now have a functional game, but we can only play through one point.  In this checkpoint you will learn how to reset the ball's position when a point is scored.
+    - More scripting in the walls management script to send a signal to the ball script to tell it to reset.
+    - More scripting in the ball script to reset it's position when a point is scored
 
-## Advanced Phase
+8. Our game is cool but we don't have sound, how do we add sound to our game?
+    - Add audtio source to ball strike
+    - Adding pitch variation to the ball strike
+    - Assignment: now you add a sound when the player scores
+    - Lastly, let's add background music to the game
+        - Breakpoint: Audio optimization
+            - Since the background track is larger in size and longer we will want to make sure that the settings are correct such as:
+                - 'Use compression'
+                - 'Stream from disc'
+
+9. Miscellaneous Stuff, tweaking our game
+    - Physics2D settings
+    - Positions iterations
+    - Adding a restart button to the game
+        - Modifying the score manager script
+        - Adding a tag to the ball object so we can reference it later
+        - Assignment: change the font on the button
+
+10. Build Settings and Exporting our Game
+    - Add the scenes to the Build Settings Scenes pane
+    - Modify the Build Settings to build for Android
+    - Add an icon for your game
+    - Setting the Bundle Identifier    
+    - And finally getting the APK onto your phone (or emulator) to test it out
+
+## Intermediate Phase (180 hours)
+
+In this phase, the student will build a more sophisticated 2D game such as Angry Birds which [Unity suggests](http://unity3d.com/learn/tutorials/modules/beginner/live-training-archive/making-angry-birds-style-game) is an "intermediate" level of game to build, or a 3D intermediate game.  The Student will also learn more advanced git techniques such as merging, rebasing, etc. 
+
+#### Zombie Slayer : Our First Three Dimensional Game, this series of checkpoints will focus heavily on the scripting aspect of Unity
+
+0.  Creating a 3D project
+
+1.  Setting up the Environment
+    - Set the lighting for the game
+
+2.  Setting the navigation in the 3D world
+    - Add the Mesh Collider component
+    - Creating the NavMesh
+    - Baking the NavMesh
+    - Assignment: Add background music to the game
+        - Tip: use a compressed audio file otherwise the game will be too big
+
+3.  Building our Zombie Slayer
+    - Importing the 3D asset into Unity
+    - Adding the animation controller, this is basically a state diagram within Unity that controls what states the player can be in:
+        - Idle, Move, Death
+    - Assignment: Build a script that will follow the zombie slayer
+    - Assignment: Add an audio source when the zombie slayer gets hurt
+    - Assignment: Add an audio source when the zombie slayer fires his weapon
+    - Animating our player's movement using scripting
+        - Introduction to raycasting
+    - Assignment: Build a script that will manage the Zombie Slayer's health
+
+4.  Adding enemies to our game
+    - Importing the 3D zombie asset
+    - Adding the spwan points for the zombies
+    - Assignment: create a script that will randomly spawn zombies in a series of set places and then attach it to the spawn points
+
+5.  Keeping Track of the Score
+    - Assignment: Build a script to keep track of how many zombies have been killed.
+    - Assignment: Display the zombie kill count in the game
+
+6.  Game Over
+    - Assignment: Build a smooth 'game over' state 
+        - Give them a partially filled out GameOverManager script
+        - When the players dies it should be animated
+        - After the animation ends, fade the game out, fade the game over state in and end the game
+        - Add a restart button that will restart the game
+7.  Build and export the game
+    - Assignment: Build and export the game
+
+#### Angry Birds, this series of checkpoints will introduce some new techniques we haven't seen as well as some scripting techniques
+
+1.  Setting up the Environment 
+    - Assignment: Setting the sprite
+    - Assignment: Adding grass
+    - Assignment: Adding a 2D edge collider to the grass
+    - Introduction to sorting layers
+
+2.  Setting up the Camera
+    - Setting the size
+
+3.  Adding the catapult (This is sort of analagous to the player module)
+    - Adding the components of the catapult and setting layers correctly
+    - Adding the asteroid to the catapult
+        - Applying the physics engine to the asteroid sprite
+            - Adding linear drag
+            - Adding angular drag
+        - Adding circular 2D collider
+            - Modifying the radius
+        - Setting the linear and angular drag
+    - Adding the catapult slings
+    - Adding the spring joint 2D to the asteroid
+        - anchor to the catapult
+    - Adding the rubber bands
+        - Add the line renderers to the catapult
+        - Add the new material to define the band
+        - Set material on line renderers
+    - Adding the ProjectileDragging.cs script to Asteroid
+ 
+4.  Modifying the camera to follow the Asteroid
+    - Adding a script that controls the camera position, add the script to Main Camera
+    - Adding boundary markers (left and right)
+
+5.  Getting the game to restart
+    - Add Boundary object that is a trigger to restart the game
+    - Assignment: Add a reset script
+
+6.  Building the Structure to be knocked down
+    - Add a parent game objects: house
+    - Add the planks to the house
+    - Same patterns as always, add the colliders
+    - Assignment: Make a prefab of a plank
+
+7.  Adding the Target
+    - Assignment: Add a script to control the amount of damage the asteroid does
+    - Add damagers to asteroid and planks
+    - Add particle system to target when it dies
+
+8.  Adding a Score System
+    - Assignment: Build a script that will manage how many points the player has scored
+
+9.  Adding More Levels
+    - Assignment: Build a completely new level (Scene) which we haven't done yet, reuse existing components to create said scene
+
+## Advanced Phase (200 Hours)
+
+In this phase students will build their own game from scratch (with assets from Unity) from a pool of games that we predetermine are sophisticated enough.
+    - Ideas for sophisticated games for students to build:
+        - Minesweeper
+        - Tetris
+        - A third person 3D RPG the game should have these minimum features:
+            - Assortment of different enemy types
+            - Levels
+            - Inventory system
+            - Health system
+            - Random world items
+            - Objectives
+            - NPCs
+        - A first person fantasy RPG with same featureset as above
+    - Have the student write at least one [custom plugin](http://docs.unity3d.com/Manual/Plugins.html)
