@@ -53,7 +53,9 @@ In this phase students will build the two dimensional game Pong as well as sligh
     5. Brief overview of basic git commands:
         - git fetch
         - git pull
-        - get checkout
+        - git checkout
+        - git branch
+        - git merge
     6. Setting the git project within MonoDevelop's Version Control
 
 #### Time to Build our First Game, Pong
