@@ -45,16 +45,19 @@ In this phase students will build the two dimensional game Pong as well as sligh
         - Encapsulation
         - Polymorphism 
 
-#### Time to Build our First Game, Pong
-
-0. Setting up Our project, creating a githug profile and initializing a git repository
-    - Explain revision control and why we need it
-    - Student creates github account if they haven't already and initializes a github repository for their game
-    - Student makes their first commit
-    - Brief overview of basic git commands:
+### Brief Introduction to using git with MonoDevelop 
+    1. Setting up our project, creating a githug profile and initializing a git repository
+    2. Explain revision control and why we need it
+    3. Student creates github account if they haven't already and initializes a github repository for their game
+    4. Student makes their first commit
+    5. Brief overview of basic git commands:
         - git fetch
         - git pull
         - get checkout
+    6. Setting the git project within MonoDevelop's Version Control
+
+#### Time to Build our First Game, Pong
+
 
 1. Brief introduction to the Unity Interface
 
